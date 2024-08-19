@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+.page1
+{
+	height: 100vh;
+	width: 100%;
+	background: #7b6cd3;
+	position: relative;
+}
+
+
+nav
+{
+	padding: 20px;
+	font-size: 18px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+nav .menu1
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav .menu1 i
+{
+	display: inline-block;
+	margin-left: -20px;
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 15px;
+}
+
+::placeholder
+{
+	font-size: 12px;
+	padding-left: 5px;
+	color: rgba(255, 255, 255, 0.5);
+}
+nav form #input
+{
+	margin-left: 10px;
+	height: 25px;
+	border-radius: 20px;
+	border: none;
+	background: rgba(255, 255, 255, 0.2);
+
+}
+nav ul
+{
+	margin-right: 100px;
+}
+nav li
+{
+	display: inline-block;
+	font-size: 12px;
+	margin: 0px 15px;
+}
+nav a
+{
+	text-decoration: none;
+	color: white;
+}
+nav ul #home
+{
+	padding: 2px 5px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.2);
+}
+nav a:hover
+{
+	color: black;
+}
+nav .menu1 .logo
+{
+	color: white;
+	font-size: 18px;
+	margin-left: 100px;
+}
+
+nav .butt button
+{
+	height:35px;
+	width: 50px;
+	font-size: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 0px;
+	background: rgba(255, 255, 255, 0.3);
+}
+nav .butt
+{
+	display: none;
+}
+
+#autoshow
+{
+	animation: autoshows both;
+	animation-timeline: view(70% 5%);
+}
+@keyframes autoshows
+{
+	from
+	{
+		opacity: 0;
+		transform: translatey(200px) scale(0.3);
+	}
+	to
+	{
+		opacity: 1;
+		transform: translatey(0) scale(1);
+	}
+}
+
+
+.slider
+{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.slider .sliderbutton
+{
+	height: 70vh;	
+	position: relative;
+}
+.slider .sliderbutton .but
+{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.slider .sliderbutton .but i
+{
+	padding: 15px 20px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.slider .sliderbutton .but-left
+{
+	position: absolute;
+	bottom: 55px;
+	left: 0px;
+}
+.slider .sliderbutton .but-right
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.image1
+{
+	padding: 70px;
+	height: 75vh;
+	width: 80%;
+	background: url('1.jpg') center/cover no-repeat;
+	border-radius: 20px;
+	position: relative;
+	z-index: 1000px;
+	transition: background 1.3s ease-in-out;
+}
+
+.image1 h3
+{
+	text-align: center;
+	font-size: 18px;
+	width: 150px;
+	border-radius: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	text-shadow: 0px 2px 2px black;
+	background: #7161ef;
+	margin-bottom: 50px;
+}
+
+.image1 h1
+{
+	color: rgba(255, 255, 255, 0.8);
+	text-shadow: 0px 2px 2px black;
+	width: 60%;
+	margin-bottom: 30px;
+}
+.image1 p
+{
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.8);
+	text-shadow: 0px 2px 2px black;
+	width: 60%;
+	margin-bottom: 30px;
+}
+.image1 .request #req1
+{
+	height: 40px;
+	width: 150px;
+	border-radius: 20px;
+	border: none;
+}
+
+.image1 .request #req2
+{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: none;
+	margin: 0px 10px;
+}
+.image1 .request i
+{
+	color: #7161ef;
+	font-size: 20px;
+	padding: 5px 15px;
+}
+.image1 .request font
+{
+	color: white;
+	text-shadow: 0px 2px 2px black;
+}
+.round 
+{
+	height: 230px;
+	width: 230px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	padding: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 200px;
+}
+.round .rounds
+{
+	height: 130px;
+	width: 130px;
+	border: 1.5px solid rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+
+}
+.round1
+{
+	height: 230px;
+	width: 230px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	padding: 50px;
+	position: absolute;
+	right: 200px;
+	top: 0;
+}
+.round1 .rounds1
+{
+	height: 130px;
+	width: 130px;
+	border: 1.5px solid rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+
+}
+.page2
+{
+	margin-top: 180px;
+	height: 150vh;
+	width: 100%;
+}
+.page2 .course
+{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	
+}
+.page2 .course .cos
+{
+	height: 220px;
+	width: 20%;
+	position: relative;
+	border-radius: 20px;
+	padding: 20px;
+	background:rgba(247, 228, 255, 0.8);
+}
+.page2 .course .cos h3
+{
+	margin-top: 30px;
+}
+.page2 .course .cos p
+{
+	font-size: 13px;
+	margin: 10px 0px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.page2 .course .cos button
+{
+	margin-top: 10px;
+	height: 30px;
+	width: 100px;
+	border-radius: 20px;
+	border: 0px;
+	background-color: white;
+	color: #7b6cd3;
+}
+.page2 .course .cos img
+{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	position: absolute;
+	top: -50px;
+	right: -30px;
+}
+.page2 .course .cos.c2 img
+{
+	height: 100px;
+	width: 100px;
+}
+
+.page2 .begin
+{
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.page2 .begin .begin1
+{
+	height: 80vh;
+	width: 100%;
+	background-color: #7b6cd3;
+	border-radius: 40px;
+	margin-left: 80px;
+	padding: 60px;
+}
+::placeholder
+{
+	color: black;
+	padding-left: 20px;
+}
+.page2 .begin .begin1 input
+{
+	height: 50px;
+	width: 90%;
+	margin-bottom: 20px;
+	border-radius: 30px;
+	border: none;
+}
+.page2 .begin .begin1 i
+{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	color: white;
+	padding: 8px;
+	margin-left: -40px;
+	background-color:  #7b6cd3;
+
+}
+
+
+
+
+.page2 .begin .begin2
+{
+	height: 70vh;
+	background:rgba(247, 228, 255, 0.8);
+	padding: 60px;
+}
+.page2 .begin .begin2 font
+{
+	color: #7b6cd3;
+	font-weight: bold;
+}
+.page2 .begin .begin2 h1
+{
+	font-size: 30px;
+	margin: 10px 0px;
+}
+.page2 .begin .begin2 p
+{
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+.page2 .begin .begin2 button
+{
+	height: 30px;
+	width: 120px;
+	border-radius: 20px;
+	border: 0px;
+	background-color: white;
+	color: #7b6cd3;
+}
+.page3
+{
+	margin-top: 100px;
+	height: 100vh;
+	width: 100%;
+}
+.page3 h3
+{
+	font-size: 14px;
+	color: #7b6cd3;
+}
+.page3 h1
+{
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+.page3 ul
+{
+	border-radius: 30px;
+	background-color: rgba(247, 228, 255, 0.5);
+	width: 50%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.page3 ul li
+{
+	display: inline-block;
+	margin: 0px 20px;
+}
+
+
+@media (max-width:1024px)
+{
+	nav
+	{
+		flex-direction: column;
+	}
+	nav .menu1 form
+	{
+		display: none;
+	}
+	nav li
+	{
+		display: block;
+		padding: 10px 0px;
+	}
+	nav ul
+	{
+		text-align: center;
+		display: none;
+	}
+	.page1
+	{
+		height: 800px;
+	}
+	.page1 nav .menu1 .logo
+	{
+		margin-left: -500px;
+	}
+	nav .butt
+	{
+		display: block;
+		position: absolute;
+		right: 40px;
+		top: 25px;
+	}
+	.showmenu
+	{
+		display: block;
+	}
+	.image1
+	{
+		height: 600px;
+	}
+	.slider .sliderbutton
+	{
+		height: 600px;
+		margin-right: 20px;
+	}
+	.page2 .course .cos
+	{
+		height: 240px;
+		width: 25%;
+		
+	}
+	.page2 .begin .begin1
+	{
+		height: 450px;
+		margin-left: 0px;
+	}
+	.page2 .begin .begin1 input
+	{
+		width: 300px;
+	}
+
+	.page2 .begin .begin2
+	{
+		height: 350px;
+	}
+	.page2 .begin .begin2 h1
+	{
+		font-size: 25px;
+	}
+	.page2 .begin .begin2 p
+	{
+		font-size: 13px;
+	}
+	.page3
+	{
+		margin-top: -600px;
+	}
+	.page3 ul
+	{
+		width: 550px;
+	}
+}
+
+@media (max-width:661px)
+{
+	.page1
+	{
+		height: 100vh;
+	}
+	.page1 nav .menu1 .logo
+	{
+		margin-left: -270px;
+	}
+	nav .butt
+	{
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 25px;
+	}
+	.image1
+	{
+		height: 500px;
+	}
+	.slider .sliderbutton
+	{
+		height: 500px;
+		margin-right: 45px;
+	}
+	.image1
+	{
+		padding: 10px;
+	}
+	.image1 h1
+	{
+		font-size: 22px;
+		width: 90%;
+	}
+	.image1 p
+	{
+		font-size: 12px;
+		width: 90%;
+	}
+	.page2 .course
+	{
+		flex-direction: column;
+	}
+	.page2 .course .cos
+	{
+		height: 240px;
+		width: 60%;
+		margin-bottom: 20px;
+		
+	}
+	.page2 .begin
+	{
+		flex-direction: column;
+	}
+
+	.page2 .begin .begin1 input
+	{
+		width: 260px;
+	}
+	.page3
+	{
+		margin-top: 800px;
+	}
+	.page3 ul 
+	{
+		display:none;
+	}
+}
+@media (max-width:400px)
+{
+	.page1 nav .menu1 .logo
+	{
+		margin-left: -200px;
+	}
+}
